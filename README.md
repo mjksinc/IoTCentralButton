@@ -30,14 +30,14 @@ Something as simple as a button can have powerful actions when connected to Azur
 ![IoT Central - New Application](https://github.com/mjksinc/ButtonGuide-Dev/blob/master/images/Image1.3.png)
 
 4. Now you'll configure the properties of your new IoT Central application:
-   - Select the *trial* payment plan (or the pay-as-you-go option if you want to keep the applciation longer than 7 days)
+   - Select the *trial* payment plan (or the pay-as-you-go option if you want to keep the application longer than 7 days)
    - Select *Custom Application* as the template
    - Enter a suitable *Application Name* and use a unique *URL*
    - Press *Create* when done
 
 ![IoT Central - Configuration Page](https://github.com/mjksinc/ButtonGuide-Dev/blob/master/images/Image1.4.png)
 
-5. That's it! You should now the see the main dashboard of your new IoT Central Application.
+5. That's it! You should now see the main dashboard of your new IoT Central Application.
 
 ![IoT Central - Application Home Page](https://github.com/mjksinc/ButtonGuide-Dev/blob/master/images/Image1.5.png)
 
@@ -65,7 +65,7 @@ Something as simple as a button can have powerful actions when connected to Azur
 
 3. Enter the following details to create the device:
    - A unique *Device ID*. This will be used for the Device Provisioning Service. A MAC Address or Serial Number are suitable IDs
-   - A *Device Name*. This could be the same as the Device ID, or something completely different like location the button will be placed
+   - A *Device Name*. This could be the same as the Device ID, or something completely different like the location where the button will be placed
    - Select *Create* when completed
 
 ![IoT Central - Create Device Template](https://github.com/mjksinc/ButtonGuide-Dev/blob/master/images/Image2.4.png)
@@ -120,13 +120,13 @@ Something as simple as a button can have powerful actions when connected to Azur
     
 12. Now you'll need to configure the email that's sent when the rule is triggered:
       - Enter a *Display Name*
-      - Recipient addresses in the *To* field. **Note:** They have to have logged into your IoT Central applcaition previously to receive the email
+      - Recipient addresses in the *To* field. **Note:** The email address must have logged into your IoT Central application previously to receive the email
       - A message to be included in the email under *Notes*
     - Click *Save* when complete
     
 ![IoT Central - Rule Details](https://github.com/mjksinc/ButtonGuide-Dev/blob/master/images/Image2.12.png)
     
-13. Congratualations! You've succssfully created a real device in IoT Central and configured a rule to be actioned based on events from the button
+13. Congratualations! You've successfully created a real device in IoT Central and configured a rule to be actioned based on events from the button
 
 ## Generating a SAS Token using Device Provisioning Service
 1. On the same page as your Measurement and Rule creation, select *Connect* at the top right of screen This will generate credentials for you to create a connection string through the **Azure Device Provisioning Service (DPS)**.
@@ -150,7 +150,7 @@ Something as simple as a button can have powerful actions when connected to Azur
 
 7. Copy the entire output of this command and save your later use. Your saved output should look similar to the string below:
 
-```HostName=saas-iothub-51a5f13a-dfd7-42a1-862c-d756bb08a236.azure-devices.net;DeviceId=sw9u;SharedAccessKey=UJQKvC4sfHW0ux7IfhN2qJEMbFztcbD3xEDadHHVIFk=```
+```HostName=saas-iothub-51aa-dfd7-42a1-8c-d7568a236.azure-devices.net;DeviceId=sw9u;SharedAccessKey=UJQKvC4sfHEMbFztcbD3xEDadHHVIFk=```
 
 6. Now you've generated your connection string, it's time to connect your teXXmo button!
 
